@@ -1,3 +1,9 @@
-body {
-    background-color: black;
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Nella dimensione dell width considero il padding */
 }
+
+/* Regole per la pagina */
