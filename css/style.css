@@ -1,96 +1,136 @@
-/* RESET CSS */
+/* =====================================
+   RESET CSS - Normalizza gli stili del browser
+   ===================================== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Nella dimensione dell width considero il padding */
+    margin: 0;  /* Rimuove tutti i margini predefiniti */
+    padding: 0; /* Rimuove tutti i padding predefiniti */
+    box-sizing: border-box; /* Include padding e border nella dimensione totale */
 }
 
-/* Utility class */
+/* =====================================
+   UTILITY CLASSES - Classi riutilizzabili
+   ===================================== */
+
+/* UTILITY: Stili del testo */
 .font-italic {
-    font-style: italic;
+    font-style: italic; /* Rende il testo corsivo */
 }
 
+/* UTILITY: Colori del testo */
 .text-color-white {
-    color: white;
+    color: white; /* Testo bianco */
 }
 
+/* UTILITY: Bordi decorativi */
 .bottom-divider {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid white; /* Linea divisoria bianca sotto l'elemento */
 }
 
+/* UTILITY: Sfondi */
 .background-gray {
-    background-color: gray;
+    background-color: gray; /* Sfondo grigio */
 }
 
-/* Regole per la pagina */
+/* =====================================
+   LAYOUT PRINCIPALE
+   ===================================== */
 
+/* Sfondo del body */
 body {
-    background-image: url(../imgs/pattern.jpg);
+    background-image: url(../imgs/pattern.jpg); /* Immagine di sfondo pattern */
 }
 
+/* Container principale dell'applicazione */
 .wrapper {
-    width: 600px;
-    margin: 0 auto;
+    width: 600px;        /* Larghezza fissa di 600px */
+    margin: 0 auto;      /* Centra orizzontalmente il container */
 }
 
+/* =====================================
+   HEADER - Barra di navigazione
+   ===================================== */
+
+/* Container dell'header */
 .navigation-bar {
-    height: 200px;
-    line-height: 200px;
+    height: 200px;          /* Altezza fissa dell'header */
+    line-height: 200px;     /* Centra verticalmente il contenuto */
 }
 
+/* Logo Gmail nell'header */
 .navigation-bar .gmail-img {
-    width: 100px;
-    vertical-align: middle;
+    width: 100px;           /* Larghezza del logo */
+    vertical-align: middle; /* Allinea verticalmente al centro */
 }
 
+/* Titolo Gmail nell'header */
 .navigation-bar .gmail-title {
-    display: inline;
-    vertical-align: middle;
+    display: inline;        /* Display inline per stare sulla stessa riga del logo */
+    vertical-align: middle; /* Allinea verticalmente al centro */
 }
+
+/* =====================================
+   FOOTER - Piè di pagina
+   ===================================== */
 
 .gmail-footer {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 1.5rem;      /* Dimensione del testo del footer */
+    font-weight: bold;      /* Testo in grassetto */
+    text-align: center;     /* Testo centrato */
+    padding-top: 20px;      /* Spazio sopra */
+    padding-bottom: 20px;   /* Spazio sotto */
 }
 
+/* =====================================
+   SEZIONE RICERCA
+   ===================================== */
+
+/* Container della barra di ricerca */
 .search {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px;      /* Spazio sopra */
+    padding-bottom: 10px;   /* Spazio sotto */
 }
 
+/* Messaggio dei non letti */
 .search .unread-msg {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px;      /* Spazio sopra */
+    padding-bottom: 10px;   /* Spazio sotto */
 }
 
+/* Badge circolare con il numero di messaggi non letti */
 .search .unread-msg-count {
-    background-color: orange;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 50%;
+    background-color: orange;  /* Sfondo arancione */
+    padding: 20px;            /* Spaziatura interna */
+    display: inline-block;    /* Display inline-block per dimensioni */
+    border-radius: 50%;       /* Forma circolare */
 }
 
+/* =====================================
+   LISTA DELLE EMAIL
+   ===================================== */
+
+/* Container della lista email */
 .mail-list {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 15px;      /* Spazio sopra */
+    padding-bottom: 15px;   /* Spazio sotto */
+    list-style: none;
 }
 
+/* Singola email nella lista */
 .mail-list .mail {
-    padding: 5px;
-    background-color: lightgrey;
-    color: black;
-    border: 1px solid black;
+    padding: 5px;                    /* Spaziatura interna */
+    background-color: lightgrey;     /* Sfondo grigio per email lette */
+    color: black;                    /* Testo nero */
+    border: 1px solid black;         /* Bordo nero */
 }
 
+/* Email non lette - sovrascrive lo stile base */
 .mail-list .mail.unread {
-    background-color: white;
+    background-color: white;         /* Sfondo bianco per email non lette */
 }
 
+/* Testo di anteprima dell'email */
 .mail .mail-text {
-    color: lightslategrey;
-    font-style: italic;
+    color: lightslategrey;           /* Colore grigio per l'anteprima */
+    font-style: italic;              /* Testo corsivo */
 }

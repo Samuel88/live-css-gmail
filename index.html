@@ -1,71 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reset CSS</title>
+    <title>Gmail Clone - Progetto Didattico</title>
 
+    <!-- Collegamento al foglio di stile CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <!-- Container principale che racchiude tutta l'applicazione -->
     <div class="wrapper">
+
+        <!-- INTESTAZIONE: Logo e titolo dell'applicazione -->
         <header class="navigation-bar bottom-divider">
-            <img class="gmail-img" src="./imgs/Gmail_icon_2020.svg" alt="logo">
+            <img class="gmail-img" src="./imgs/Gmail_icon_2020.svg" alt="Logo Gmail">
             <h1 class="gmail-title text-color-white">Gmail</h1>
         </header>
 
+        <!-- CONTENUTO PRINCIPALE: Barra di ricerca e lista email -->
         <main>
-            <div class="search bottom-divider">
-                <input type="text" placeholder="Cerca">
+            <!-- Sezione di ricerca con input e contatore messaggi -->
+            <section class="search bottom-divider">
+                <input type="text" placeholder="Cerca nelle email">
                 <button>VAI</button>
                 <h2 class="unread-msg text-color-white">
-                    You have <span class="unread-msg-count text-color-white">30</span> unread
+                    Hai <span class="unread-msg-count text-color-white">30</span> messaggi non letti
                 </h2>
-            </div>
+            </section>
 
-            <div class="mail-results bottom-divider">
+            <!-- Contenitore dei risultati email -->
+            <section class="mail-results bottom-divider">
+                <!-- Lista delle email -->
+                <!-- NEL CASO UNO VOGLI UTILIZZARE IL TAH SEMANTICO UL/LI -->
+                <ul class="mail-list">
 
-                <div class="mail-list">
+                    <!-- Email singola (letta) -->
+                    <li class="mail bottom-divider">
+                        <input type="checkbox" class="mail-check" aria-label="Seleziona email">
+                        <span class="mail-important" role="button" aria-label="Segna come importante">&starf;</span>
+                        <strong class="mail-object">Benvenuto nel corso di programmazione</strong>
+                        <span class="mail-text">- Iniziamo con i fondamenti di HTML e CSS</span>
+                    </li>
 
-                    <div class="mail bottom-divider">
-                        <input type="checkbox" class="mail-check">
-                        <span class="mail-important">&starf;</span>
-                        <strong class="mail-object">Oggetto della mail</strong>
-                        <span class="mail-text">- testo della email</span>
-                    </div>
+                    <!-- Email singola (non letta) -->
+                    <li class="mail bottom-divider unread">
+                        <input type="checkbox" class="mail-check" aria-label="Seleziona email">
+                        <span class="mail-important" role="button" aria-label="Segna come importante">&starf;</span>
+                        <strong class="mail-object">Esercizi di JavaScript</strong>
+                        <span class="mail-text">- Completa gli esercizi entro venerdì</span>
+                    </li>
 
-                    <div class="mail bottom-divider unread">
-                        <input type="checkbox" class="mail-check">
-                        <span class="mail-important">&starf;</span>
-                        <strong class="mail-object">Oggetto della mail</strong>
-                        <span class="mail-text">- testo della email</span>
-                    </div>
+                    <!-- Email singola (letta) -->
+                    <li class="mail bottom-divider">
+                        <input type="checkbox" class="mail-check" aria-label="Seleziona email">
+                        <span class="mail-important" role="button" aria-label="Segna come importante">&starf;</span>
+                        <strong class="mail-object">Materiali del corso</strong>
+                        <span class="mail-text">- Trova tutti i documenti nella cartella condivisa</span>
+                    </li>
 
-                    <div class="mail bottom-divider">
-                        <input type="checkbox" class="mail-check">
-                        <span class="mail-important">&starf;</span>
-                        <strong class="mail-object">Oggetto della mail</strong>
-                        <span class="mail-text">- testo della email</span>
-                    </div>
+                    <!-- Email singola (letta) -->
+                    <li class="mail bottom-divider">
+                        <input type="checkbox" class="mail-check" aria-label="Seleziona email">
+                        <span class="mail-important" role="button" aria-label="Segna come importante">&starf;</span>
+                        <strong class="mail-object">Progetto finale</strong>
+                        <span class="mail-text">- Istruzioni per la consegna del progetto</span>
+                    </li>
 
-                    <div class="mail bottom-divider">
-                        <input type="checkbox" class="mail-check">
-                        <span class="mail-important">&starf;</span>
-                        <strong class="mail-object">Oggetto della mail</strong>
-                        <span class="mail-text">- testo della email</span>
-                    </div>
-
-
-
-                </div>
-            </div>
+                </ul>
+            </section>
 
         </main>
 
+        <!-- PIÈ DI PAGINA: Informazioni sul copyright -->
         <footer class="gmail-footer">
-            <p class="gmail-copy text-color-white">Gmail <span class="copy-powered font-italic">powered by Davide</span></p>
+            <p class="gmail-copy text-color-white">Gmail <span class="copy-powered font-italic">powered by Davide</span>
+            </p>
         </footer>
     </div>
 </body>
