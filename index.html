@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,66 @@
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header></header>
+    <div class="wrapper">
+        <header class="navigation-bar bottom-divider">
+            <img class="gmail-img" src="./imgs/Gmail_icon_2020.svg" alt="logo">
+            <h1 class="gmail-title text-color-white">Gmail</h1>
+        </header>
 
-    <main></main>
+        <main>
+            <div class="search bottom-divider">
+                <input type="text" placeholder="Cerca">
+                <button>VAI</button>
+                <h2 class="unread-msg text-color-white">
+                    You have <span class="unread-msg-count text-color-white">30</span> unread
+                </h2>
+            </div>
 
-    <footer></footer>
+            <div class="mail-results bottom-divider">
+
+                <div class="mail-list">
+
+                    <div class="mail bottom-divider">
+                        <input type="checkbox" class="mail-check">
+                        <span class="mail-important">&starf;</span>
+                        <strong class="mail-object">Oggetto della mail</strong>
+                        <span class="mail-text">- testo della email</span>
+                    </div>
+
+                    <div class="mail bottom-divider unread">
+                        <input type="checkbox" class="mail-check">
+                        <span class="mail-important">&starf;</span>
+                        <strong class="mail-object">Oggetto della mail</strong>
+                        <span class="mail-text">- testo della email</span>
+                    </div>
+
+                    <div class="mail bottom-divider">
+                        <input type="checkbox" class="mail-check">
+                        <span class="mail-important">&starf;</span>
+                        <strong class="mail-object">Oggetto della mail</strong>
+                        <span class="mail-text">- testo della email</span>
+                    </div>
+
+                    <div class="mail bottom-divider">
+                        <input type="checkbox" class="mail-check">
+                        <span class="mail-important">&starf;</span>
+                        <strong class="mail-object">Oggetto della mail</strong>
+                        <span class="mail-text">- testo della email</span>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="gmail-footer">
+            <p class="gmail-copy text-color-white">Gmail <span class="copy-powered font-italic">powered by Davide</span></p>
+        </footer>
+    </div>
 </body>
+
 </html>

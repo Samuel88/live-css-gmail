@@ -6,4 +6,91 @@
     box-sizing: border-box; /* Nella dimensione dell width considero il padding */
 }
 
+/* Utility class */
+.font-italic {
+    font-style: italic;
+}
+
+.text-color-white {
+    color: white;
+}
+
+.bottom-divider {
+    border-bottom: 2px solid white;
+}
+
+.background-gray {
+    background-color: gray;
+}
+
 /* Regole per la pagina */
+
+body {
+    background-image: url(../imgs/pattern.jpg);
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.navigation-bar {
+    height: 200px;
+    line-height: 200px;
+}
+
+.navigation-bar .gmail-img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+.navigation-bar .gmail-title {
+    display: inline;
+    vertical-align: middle;
+}
+
+.gmail-footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.search {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search .unread-msg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search .unread-msg-count {
+    background-color: orange;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.mail-list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mail-list .mail {
+    padding: 5px;
+    background-color: lightgrey;
+    color: black;
+    border: 1px solid black;
+}
+
+.mail-list .mail.unread {
+    background-color: white;
+}
+
+.mail .mail-text {
+    color: lightslategrey;
+    font-style: italic;
+}
